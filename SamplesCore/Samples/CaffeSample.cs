@@ -1,11 +1,12 @@
-﻿using System;
+﻿using OpenCvSharp;
+using OpenCvSharp.Dnn;
+using SampleBase;
+using System;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
-using OpenCvSharp;
-using OpenCvSharp.Dnn;
-using SampleBase;
 
 namespace SamplesCore
 {
@@ -47,12 +48,15 @@ namespace SamplesCore
 
         private static byte[] DownloadBytes(string url)
         {
-            var client = WebRequest.CreateHttp(url);
-            using var response = client.GetResponseAsync().GetAwaiter().GetResult();
-            using var responseStream = response.GetResponseStream();
-            using var memory = new MemoryStream();
-            responseStream.CopyTo(memory);
-            return memory.ToArray();
+            var _client = new HttpClient();
+            return _client.GetByteArrayAsync(url).GetAwaiter().GetResult();
+
+            //var client = WebRequest.CreateHttp(url);
+            //using var response = client.GetResponseAsync().GetAwaiter().GetResult();
+            //using var responseStream = response.GetResponseStream();
+            //using var memory = new MemoryStream();
+            //responseStream.CopyTo(memory);
+            //return memory.ToArray();
         }
 
         private static void PrepareModel(string fileName)

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using OpenCvSharp;
 using OpenCvSharp.XImgProc;
 using SampleBase;

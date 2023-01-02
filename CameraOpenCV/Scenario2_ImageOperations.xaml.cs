@@ -314,7 +314,7 @@ namespace SDKTemplate
         }
 
         // Saving output Image
-        private async void OnSave(object sender, RoutedEventArgs e)
+        private void OnSave(object sender, RoutedEventArgs e)
         {
         }
 

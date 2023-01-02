@@ -1,5 +1,6 @@
 ﻿using OpenCvSharp;
 using SampleBase;
+using System.Threading.Tasks;
 
 namespace SamplesCore
 {

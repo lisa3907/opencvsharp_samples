@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using OpenCvSharp;
 using OpenCvSharp.Aruco;
 using SampleBase;

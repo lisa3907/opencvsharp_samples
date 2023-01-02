@@ -1,5 +1,6 @@
 ﻿using SampleBase.Interfaces;
 using System;
+using System.Threading.Tasks;
 
 namespace SampleBase
 {

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <UseWPF>true</UseWPF>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <RootNamespace>VideoCaptureWPF</RootNamespace>
     <AssemblyName>VideoCaptureWPF</AssemblyName>
     <WarningLevel>4</WarningLevel>
